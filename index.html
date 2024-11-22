@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <img
+      class="profile__picture"
+      src="./assets/wolfEyes.png"
+      alt="Blue eyes of a wolf"
+    />
+
+    <h1>&lt; About props={about}/ &gt;</h1>
+
+    <p id="intro" style="font-size: larger">
+      Hey there, my name is Erlend and I'm 24 years old. I come from Bergen,
+      Norway.
+    </p>
+    <main>
+      <ul>
+        <p class="about-me__title">props.<strong>education</strong>.map()</p>
+        <li>Building and construction engineering</li>
+        <li>Front-end Development Noroff</li>
+      </ul>
+
+      <ul>
+        <p class="about-me__title">
+          props.<strong>work experience</strong>.map()
+        </p>
+        <li>Carpenter</li>
+        <li>Mason</li>
+        <li>Scaffolding</li>
+        <li>Concrete</li>
+        <li>Front-end Developer</li>
+      </ul>
+
+      <ul>
+        <p class="about-me__title">props.<strong>hobbies</strong>.map()</p>
+        <li>Videogame</li>
+        <li>Music</li>
+        <li>Hikes/Weightlifting</li>
+        <li>And programmering of course</li>
+      </ul>
+
+      <ul>
+        <p class="about-me__title">props.<strong>languages</strong>.map()</p>
+        <li>HTML</li>
+        <li>CSS/TailwindCSS</li>
+        <li>JavaScript/TypeScript</li>
+        <li>React</li>
+        <li>Some electron</li>
+      </ul>
+    </main>
+    <h2>From building houses to websites</h2>
+  </body>
+</html>
