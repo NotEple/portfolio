@@ -12,6 +12,7 @@
     "devmobile": "npm run dev -- --host"
   },
   "dependencies": {
+    "@dev.icons/react": "^1.1.0",
     "@tailwindcss/vite": "^4.2.2",
     "clsx": "^2.1.1",
     "lucide-react": "^1.11.0",

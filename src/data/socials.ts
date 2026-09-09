@@ -1,0 +1,5 @@
+export const socials = {
+  discord: "https://discord.com/users/195228341970796544",
+  linkedin: "https://www.linkedin.com/in/erlend-s-2206ab159/",
+  github: "https://github.com/erlsva",
+} as const;

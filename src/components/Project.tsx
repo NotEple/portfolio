@@ -1,9 +1,9 @@
 import { Link } from "./Link";
 import type { JSX } from "react";
-import { Devicon } from "./Devicon";
 import { Tooltip } from "./Tooltip";
 import { Globe } from "lucide-react";
 import { motion } from "motion/react";
+import { GithubIcon } from "@dev.icons/react/mono";
 import { technologyIcons, type Technology } from "@/data/technologies";
 
 export type ProjectProps = {
@@ -47,15 +47,12 @@ export const Project = ({
         <div className="flex lg:flex-row justify-between gap-4 md:items-center md:flex-row lg:items-center flex-col">
           <div className="flex flex-row gap-2">
             {technologies.map((technology, index) => {
-              const icon = technologyIcons[technology];
+              const Icon = technologyIcons[technology];
 
               return (
                 <Tooltip text={technology} key={index}>
                   <div className="bg-neutral-900 p-2 rounded-lg shadow-2xs border border-border">
-                    <Devicon
-                      className="drop-shadow-2xl text-3xl w-12 h-12"
-                      icon={icon}
-                    />
+                    <Icon className={"drop-shadow-2xl text-3xl w-10 h-10"} />
                   </div>
                 </Tooltip>
               );
@@ -82,10 +79,7 @@ export const Project = ({
                   href={github}
                   openInNewTab
                 >
-                  <Devicon
-                    icon="devicon-github-original"
-                    className="text-4xl"
-                  />
+                  <GithubIcon className="text-4xl" />
                 </Link>
               </Tooltip>
             )}

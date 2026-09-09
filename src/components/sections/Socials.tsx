@@ -1,9 +1,10 @@
 import type { JSX } from "react";
-import data from "#/socials.json";
 import { Mail } from "lucide-react";
 import { motion } from "motion/react";
 import { Link } from "@/components/Link";
+import { socials } from "@/data/socials";
 import { Section } from "@/components/Section";
+import { GithubIcon } from "@dev.icons/react/mono";
 
 export const Socials = (): JSX.Element => {
   return (
@@ -28,7 +29,7 @@ export const Socials = (): JSX.Element => {
         className="grid grid-cols-2 gap-4 justify-center p-4 rounded-3xl bg-neutral-900 drop-shadow-2xl shadow-2xl w-full h-full lg:flex lg:flex-row lg:h-fit border border-border"
       >
         <Link
-          href={data.socials.linkedin}
+          href={socials.linkedin}
           openInNewTab
           className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 justify-center"
         >
@@ -43,15 +44,11 @@ export const Socials = (): JSX.Element => {
         </Link>
 
         <Link
-          href={data.socials.github}
+          href={socials.github}
           openInNewTab
-          className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 justify-center"
+          className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 justify-center items-center"
         >
-          <i
-            className={
-              "fa-brands fa-github text-5xl lg:text-8xl text-neutral-100"
-            }
-          ></i>
+          <GithubIcon className="text-5xl lg:text-8xl text-neutral-100" />
           <p className="lg:text-4xl text-2xl font-header text-neutral-100">
             GitHub
           </p>

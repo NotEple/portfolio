@@ -1,8 +1,9 @@
-import overlay from "@/assets/overlay.png";
 import vicksy from "@/assets/Vicksy.png";
-import steakhouse from "@/assets/steakhouse.png";
 import memory from "@/assets/memory.png";
+import overlay from "@/assets/overlay.png";
 import weather from "@/assets/weather.png";
+import steakhouse from "@/assets/steakhouse.png";
+import advancedoverlay from "@/assets/advanced-overlay.png";
 import type { ProjectProps } from "@/components/Project";
 
 export const projects: ProjectProps[] = [
@@ -11,7 +12,14 @@ export const projects: ProjectProps[] = [
     title: "Custom OBS Overlay",
     description:
       "I watch a streamer on twitch, and I made her a custom overlay tool that her mods can play with to put images, videos and gifs onto her screen and move around, resize them and rotate them.",
-    technologies: ["HTML", "CSS", "JavaScript", "Tailwind", "Express"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind",
+      "Express",
+      "OpenAi",
+    ],
     github: "https://github.com/NotEple/shared-obs-overlay",
   },
   {
@@ -37,7 +45,7 @@ export const projects: ProjectProps[] = [
     title: "Memory game",
     description:
       "Super simple memory game with time tracking and turn tracking. And some confetti when you win 🎉",
-    technologies: ["Vite", "React", "Tailwind", "TypeScript"],
+    technologies: ["React", "Tailwind", "TypeScript"],
     website: "https://react-vite-ts-memory-game.netlify.app/",
     github: "https://github.com/NotEple/Reactprosjekt-Memoryspill",
   },
@@ -45,8 +53,24 @@ export const projects: ProjectProps[] = [
     img: weather,
     title: "Weather App",
     description: "Super simple weather app.",
-    technologies: ["React", "TypeScript", "Tailwind", "Vite"],
-    website: "https://react-vite-ts-memory-game.netlify.app/",
-    github: "https://github.com/NotEple/Reactprosjekt-Memoryspill",
+    technologies: ["React", "TypeScript", "Tailwind"],
+    website: "https://weatherfyapp.netlify.app/",
+    github: "https://github.com/erlsva/weatherfy",
+  },
+  {
+    img: advancedoverlay,
+    title: "Advanced Overlay",
+    description:
+      "This is the most advanced overlay I've worked on. Together with Claude and ChatGPT, we've made a very fun, interactive and advanced platform for a streamer. Fully intergrated with whitelisted Twitch login, drawing, image, video and gif upload, moving those medias around an transparent overlay that the streamer adds as a browser source in OBS.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Websocket",
+      "Neon",
+      "Claude",
+      "OpenAi",
+    ],
+    github: "https://github.com/erlsva/claude-overlay",
   },
 ];
